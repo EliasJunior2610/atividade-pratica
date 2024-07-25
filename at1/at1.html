@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="at1.css">
+    <title>Pizza On-Line</title>
+</head>
+<body>
+    <h1>Pizza On-Line</h1>
+    <form id="pedidoForm">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="tamanho">Tamanho:</label>
+        <select name="tamanho" id="tamanho">
+            <option value="pequena">Pequena</option>
+            <option value="media">Média</option>
+            <option value="grande">Grande</option>
+            <option value="familia">Família</option>
+        </select>
+
+        <label>Ingredientes</label>
+        <select multiple name="ingredientes[]">
+            <option value="mussarela">Mussarela</option>
+            <option value="presunto">Presunto</option>
+            <option value="calabresa">Calabresa</option>
+            <option value="ovos cozidos">Ovos Cozidos</option>
+            <option value="pimentao">Pimentão</option>
+            <option value="cebola">Cebola</option>
+            <option value="oregano">Oregáno</option>
+        </select>
+
+        <label>Borda de Catupiry?</label>
+        <input type="radio" name="borda" id="sim" value="sim">
+        <label for="sim">Sim</label>
+        <input type="radio" name="borda" id="nao" value="nao">
+        <label for="nao">Não</label>
+
+        <label for="observacoes">Observações:</label>
+        <textarea name="observacoes" id="observacoes"></textarea>
+
+        <input type="submit" value="Enviar Pedido">
+    </form>
+
+    <script src="at1.js"></script>
+</body>
+</html>

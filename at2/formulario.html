@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="tel"], input[type="email"] {
+            width: 100%;
+            padding: 5%;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            margin: 0 auto;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="formulario.html" target="formulario">Incluir</a>
+        <a href="#">Alterar</a>
+        <a href="#">Deletar</a>
+        <a href="#">Consultar</a>
+    </div>
+    
+    <h1>Inclusão de Cliente</h1>
+    <form action="inclusaoForm">
+        <label for="nome" id="nome" name="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+
+        <label for="endereco" id="endereco" name="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco" required>
+
+        <label for="telefone" id="telefone" name="telefone">Telefone:</label>
+        <input type="tel" name="telefone" id="telefone" required>
+
+        <label for="email" id="email" name="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
